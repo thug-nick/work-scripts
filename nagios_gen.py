@@ -20,7 +20,7 @@ servers = dict(zip(ip2[::2],ip2[1::2]))
 
 
 for name, ip in servers.items():
-	print('#Multiplay ' + name + ' ' + ip)
+	print('#Play ' + name + ' ' + ip)
 	for line in template:
 		if line.endswith('host_name'):
 			print('{} {}'.format(line, name))
